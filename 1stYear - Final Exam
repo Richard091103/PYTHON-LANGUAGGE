@@ -1,0 +1,252 @@
+#Program Description
+  # Our program is composed of three main syntax such as Loops, Conditional Statements , 
+  # and functions, from here we are able to create a game which is a "Quiz Game" in this program users would 
+  # have the chance to answer the maximum question of three questions.If the players answer is correct it would display 
+  # "Correct" otherwise it would dislay "Wrong". After the users answer, their total score would be displayed and the program 
+  # will prompt a question if the palayer wants to answer again but this time the set of questions would not be the same as the 
+  # first one, it would be randomized based on the questions we provided.
+
+import random 
+
+def questionRandom():
+    print("~~~~~ WELCOME TO QUIZ GAME ~~~~~")
+    print("How many questions would like to answer?")
+    numberOfProblems = input()
+    numberOfProblems = int(numberOfProblems)
+    score = 0
+    
+    if numberOfProblems > 6:
+        print("Sorry you can only answer up to 5 questions! ")
+        questionRandom()
+    if numberOfProblems <= 0:
+        print("Thanks for playing!")
+        exit(0)
+    else:
+        
+        for problemWanter in range(numberOfProblems):
+            question1 = 1
+            question2 = 2
+            question3 = 3
+            question4 = 4
+            question5 = 5
+            question6 = 6
+            question7 = 7
+            question8 = 8
+            question9 = 9
+            question10 = 10
+            question11 = 11
+            question12 = 12
+            question13 = 13
+            question14 = 14
+            question15 = 15
+            question16 = 16
+            question17 = 17
+            question18 = 18
+            question19 = 19
+            question20 = 20
+            
+            questionNumber = random.randint(1, 20)
+            
+            if questionNumber == 1:
+                print("\nGiven are the main uses of python except for one: \na. Developing website and software \nb. Task automation \nc. Mobile and game development \nd. data analysis and visualization")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "C":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            if questionNumber == 2:
+                print("\nWhat type of language is python? \na. Compiled \nb. Scripting \nc. Structured Query \nd. Standardize ")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "B":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+            
+            if questionNumber == 3:
+                print("\nWhat is Pep 8? \na. Python Enhancement Proposal \nb. Python Enhancer Proposal \nc. Proposal Enhancing Python \nd. Python Enhancing Property")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "A":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            if questionNumber == 4:
+                print("\nThree Python namespaces are listed below, choose one that doesn't belong \na. Built-in namespaces \nb. Global namespaces \nc. Local namespaces \nd. Universal namespaces	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "D":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+            
+            if questionNumber == 5:
+                print("\nChoose which is the common built-in data types in python \na. String \nb. Boolean \nc. Dynamic \nd. Code	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "A":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            if questionNumber == 6:
+                print("\nWhich is not a Keyword in Pyhton? \na. And \nb. Elif \nc. Else \nd. Switch	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "B":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+                    
+            if questionNumber == 7:
+                print("\nWhen was python invented \na. 1976 \nb. around 1976 \nc. around 1990 \nd. 1985	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "C":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+            
+            if questionNumber == 8:
+                print("\nWho invented Python? \na. Ada Lovelece \nb. Guido van Rossum \nc. Charles Babbage \nd. Bill Gates	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "B":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            
+            if questionNumber == 9:
+                print("\nIs python case sensitive? \na. No  \nb. Maybe \nc. Yes \nd. Idk	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "C":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            if questionNumber == 10:
+                print("\nChoose one built-in types in python \na. Boolean  \nb. Array \nc. namespaces \nd. Generator 	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "A":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            if questionNumber == 11:
+                print("\nLocal Variables  are variables declared inside a function, this variable is present in the local space and not in the global space. \na. false \nb. True \nc. Maybe \nd. Idk	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "B":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            if questionNumber == 12:
+                print("\nHow many types of inheritance does python supports? \na. 3 \nb. 9 \nc. 4 \nd. 7	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "C":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            if questionNumber == 13:
+                print("\nListed below are the key features of python, except \na. Interpreted language \nb. Game developing \nc. dynamically typed \nd. use in many spheres	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "B":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            if questionNumber == 14:
+                print("\nPython is not an interpreted language \na. True \nb. Yes \nc. False \nd. Maybe	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "C":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+            
+            if questionNumber == 15:
+                print("\nWhat is not a benefit of using python? \na. Free and open-source \nb. Portable \nc. Dynamically typed \nd. Not easy to use	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "D":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            if questionNumber == 16:
+                print("\nWhat is not a way in importing modules in python? \na. Import array \nb. insert and remove array \nc. Import array as arr \nd. from array import *	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "B":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            if questionNumber == 17:
+                print("\nIn Python, the term monkey patch only refers to dynamic modifications of a class or module at run-time. \na. True \nb. Wrong \nc. Maybe \nd. Idk	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "A":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            if questionNumber == 18:
+                print("\nWe use python numpy array instead of a list because of this reasons except for one: \na. Less memory \nb. Fast \nc. Easy \nd. Convenient	")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "C":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            if questionNumber == 19:
+                print("\nSciPy contains linear algebra functions. \na. Yes \nb. True \nc. False, SystemPy \nd. False, NumPy  ")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "D":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+                    
+            if questionNumber == 20:
+                print("\nWhat is the maximum possible length of an identifier? \na. 31 Characters \nb. 63 Characters \nc. 79 Characters \nd. None of the above  ")
+                guess = input("Enter your answer > ")
+                if guess.upper() == "D":
+                    score += 1
+                    print("CORRECT!")
+                else:
+                    print("WRONG")
+            
+        print("\nScore: ", score)
+    
+    try:
+        percentage = (score *100)/numberOfProblems
+    except ZeroDivisionError:
+        print('0% quetions are correct')
+
+    print(f'{"%.2f"%percentage}% questions are correct.')
+    
+    again()
+    
+def again():
+    if input("\nDo you want to continue?(y/n) ") == 'y':
+        questionRandom()
+    else:
+        print("THANK YOU FOR PLAYING!")
+        exit(0)
+        
+questionRandom()
+    
+   
