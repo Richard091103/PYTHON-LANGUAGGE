@@ -2,9 +2,8 @@
   # Our program is composed of three main syntax such as Loops, Conditional Statements , 
   # and functions, from here we are able to create a game which is a "Quiz Game" in this program users would 
   # have the chance to answer the maximum question of five questions.If the players answer is correct it would display 
-  # "Correct" and you got +1 to your score otherwise it would dislay "Wrong". After the users answer, their total score would be displayed and the program 
-  # will prompt a question if the palayer wants to answer again but this time the set of questions would not be the same as the 
-  # first one, it would be randomized based on the questions we provided.
+  # "Correct" otherwise it would dislay "Wrong". After the users answer, their total score would be displayed and the program 
+  # will prompt a question if the player wants to answer again but this time it would show different sets of questions.
 
 import random 
 
@@ -15,7 +14,7 @@ def questionRandom():
     numberOfProblems = int(numberOfProblems)
     score = 0
     
-    if numberOfProblems > 6:
+    if numberOfProblems > 5:
         print("Sorry you can only answer up to 5 questions! ")
         questionRandom()
     if numberOfProblems <= 0:
@@ -23,7 +22,7 @@ def questionRandom():
         exit(0)
     else:
         
-        for problemWanted in range(numberOfProblems):
+        for problemWanter in range(numberOfProblems):
             question1 = 1
             question2 = 2
             question3 = 3
@@ -236,17 +235,17 @@ def questionRandom():
     except ZeroDivisionError:
         print('0% quetions are correct')
 
-    print(f'{"%.2f"%percentage}% questions are correct.')
+    print(f'{"%.2f"%percentage}% question/s are correct.')
     
     again()
     
 def again():
     if input("\nDo you want to continue?(y/n) ") == 'y':
+        print("\n")
         questionRandom()
     else:
-        print("THANK YOU FOR PLAYING!")
+        print("\nTHANK YOU FOR PLAYING!")
         exit(0)
         
+
 questionRandom()
-    
-   
